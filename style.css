@@ -22,15 +22,15 @@ html, body {
   height: 100%;
     background-color: #E5E6E8;
     color: #fff;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0;
 }
 
 /* Section 1 */
 .section-1index {
   background: url('background.jpg') no-repeat center center/cover;
   background-size: cover;
-    height: 100vh; /* Full height for the background section */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,7 +52,7 @@ html, body {
 .centered-text h3, .centered-text p {
     color: white;
     font-family: 'Roboto', sans-serif;
-    margin: 0; /* Remove default margin */
+    margin: 0;
     font-size: 25px;
 }
 
@@ -78,7 +78,7 @@ header {
 }
 
 h1 {
-  text-align: center; /* Center text alignment */
+  text-align: center;
   font-size: 30px;
   color: var(--gray-color);
   margin: 0; /* Remove margins to ensure centering works */
@@ -96,8 +96,15 @@ nav a {
   text-transform: uppercase;
   color: var(--gray-color);
   transition: color 0.3s;
-  padding: 5px 10px; /* Add padding to keep the size consistent */
-  border-radius: 5px; /* Add border radius for a nicer look */
+  transition: color 0.3s, background-color 0.3s; /* Include background-color in transition */
+  padding: 5px 10px; /* Add padding to create the box effect */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+/* Hover Effect for the Navbar Button */
+nav a:hover {
+  color: var(--white-color); /* Change text color to white */
+  background-color: var(--blue-color); /* Blue background box on hover */
 }
 
 
@@ -111,7 +118,7 @@ nav a {
 /* Hover Effect for the CV Button */
 .indexNav a[href$="cv.pdf"]:hover {
     background: #0056b3; /* Darker blue on hover */
-    border: 2px solid #0056b3; /* Change border to match hover color */
+    border: 2px solid #0056b3;
     transition: all 0.3s ease; /* Smooth transition effect */
 }
 
@@ -144,8 +151,8 @@ nav a {
     display: flex;                  /* Use Flexbox for positioning */
     justify-content: center;        /* Center content horizontally */
     align-items: center;            /* Center content vertically */
-    min-height: 100vh;              /* Full viewport height */
-    background-color: #E5E6E8;      /* Optional background color */
+    min-height: 100vh;
+    background-color: #E5E6E8;
     gap: 50px;                      /* Space between the two cards */
     margin-bottom: 150px
 }
@@ -162,8 +169,8 @@ nav a {
     border-radius: 8px;             /* Rounded corners */
     box-shadow: 0 10px 15px var(--blue-color); /* Subtle shadow */
     padding: 20px;                  /* Inner padding for content */
-    width: 500px;                   /* Set a fixed width for both cards */
-    text-align: left;               /* Align text to the left */
+    width: 500px;
+    text-align: left;
 }
 
 .about-card p {
@@ -263,9 +270,9 @@ nav a {
 
 .section-3 {
     display: flex; /* Flexbox to center content */
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
 }
 
@@ -279,21 +286,21 @@ nav a {
 
 /* Projects Section Styling */
 .projects-section {
-    display: flex;                /* Use flexbox to position content */
-    justify-content: center;      /* Center content horizontally */
-    align-items: center;          /* Center content vertically */
-    min-height: 100vh;            /* Full viewport height */
-    background-color: #f5f5f5;    /* Background color for the section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
 }
 
 /* Container to hold all project cards */
 .project-cards-container {
     display: flex;
-    flex-direction: column;       /* Stack items in a column */
-    align-items: center;          /* Center items horizontally */
-    justify-content: center;      /* Center items vertically */
-    gap: 30px;                    /* Space between project cards */
-    margin: 0 auto;               /* Center the container itself */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;    /* Space between project cards */
+    margin: 0 auto;
 }
 
 /* Individual project card */
@@ -301,12 +308,12 @@ nav a {
     background-color: var(--white-color);
     border-radius: 12px;          /* Rounded corners */
     box-shadow: 0 10px 15px rgba(255, 81, 81, 0.5);
-    overflow: hidden;             /* Ensure inner content doesn't overflow */
+    overflow: hidden;        /* Ensure inner content doesn't overflow */
     width: 500px;
     display: flex;
-    flex-direction: column;       /* Stack content inside the card */
+    flex-direction: column;     /* Stack content inside the card */
     text-align: left;
-    margin: 0 auto;               /* Center each card within the container */
+    margin: 0 auto;         /* Center each card within the container */
 }
 
 
@@ -422,6 +429,7 @@ h6 {
 /* Scrollbar styling for Webkit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
     width: 20px;
+    
 }
 
 ::-webkit-scrollbar-track {
